@@ -1324,7 +1324,6 @@ impl PacketReceiver {
                     if !matches!(*error, ReadPacketError::ConnectionClosed) {
                         error!("Error reading packet from Client: {error:?}");
                     }
-                    break;
                 }
             }
         }
